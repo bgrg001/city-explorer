@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import { useState } from "react";
 
 function App() {
+  // const []
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="form">
+      <form>
+        <label>
+          Enter your name:
+          <input type="text" placeholder="name"></input>
+          Enter your location:
+          <input type="text" placeholder="location"></input>
+        </label>
+        <h1>The city is:</h1>
+      </form>
     </div>
   );
 }
